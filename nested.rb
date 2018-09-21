@@ -1,4 +1,4 @@
-
+require "pry"
 def hopper
 	programmer_hash =
  		{
@@ -85,7 +85,8 @@ def adding_matz
 		:known_for => "Ruby",
 		:languages => ["LISP", "C"]
 	}
-	return programmer_hash[:yukihiro_matsumoto].to_h
+	binding.pry
+	return programmer_hash[:yukihiro_matsumoto]
 
 end
 
